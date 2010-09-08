@@ -980,6 +980,22 @@ describe RiCal::PropertyValue::RecurrenceRule do
       )
       
       enumeration_spec(
+      "Monthly on the fourth day of the month forever (Submitted by Tys von Gaza)",
+      "19970904T090000",
+      "US-Eastern",
+      "FREQ=MONTHLY;BYMONTHDAY=4",
+      [
+        "Sep 4, 1997 9:00 AM EDT",
+        "Oct 4, 1997 9:00 AM EDT",
+        "Nov 4, 1997 9:00 AM EST",
+        "Dec 4, 1997 9:00 AM EST",
+        "Jan 4, 1998 9:00 AM EST",
+        "Feb 4, 1998 9:00 AM EST",
+        "..."
+      ]
+      )
+      
+      enumeration_spec(
       "Monthly on the third the to last day of the month forever (RFC 2445 p 121)",
       "19970928T090000",
       "US-Eastern",
